@@ -1,59 +1,119 @@
-# TaskManager
+# 🚀 Task Manager - Full Stack Application
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.5.
+## 📌 Overview
 
-## Development server
+A full-stack task management application built using **Angular**, **ASP.NET Core**, and **PostgreSQL**.
+It allows users to create, update, and manage tasks efficiently with a clean UI and structured backend.
 
-To start a local development server, run:
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+* Angular
+* Tailwind CSS
+
+### Backend
+
+* ASP.NET Core Web API
+
+### Database
+
+* PostgreSQL
+
+---
+
+## ✨ Features
+
+* Create, update, and delete tasks (CRUD operations)
+* Drag-and-drop task management
+* RESTful API integration
+* Persistent data storage using PostgreSQL
+* Modular and scalable architecture
+
+---
+
+## 📂 Project Structure
 
 ```bash
+task-manager/
+│
+├── frontend/        # Angular application
+│   ├── src/
+│   ├── public/
+│   └── angular.json
+│
+├── backend/         # ASP.NET Core API
+│   ├── Controllers/
+│   ├── Models/
+│   ├── Data/
+│   ├── Migrations/
+│   ├── Program.cs
+│   └── appsettings.json
+│
+├── .gitignore
+└── README.md
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/subhradeep1708/task-manager.git
+cd task-manager
+```
+
+---
+
+### 2️⃣ Run Backend (.NET)
+
+```bash
+cd backend
+dotnet restore
+dotnet run
+```
+
+👉 Backend will run on:
+http://localhost:5000
+
+---
+
+### 3️⃣ Run Frontend (Angular)
+
+```bash
+cd frontend
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+👉 Frontend will run on:
+http://localhost:4200
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🔗 API Configuration
 
-```bash
-ng generate component component-name
+Make sure your Angular app calls the backend at:
+
+```ts
+http://localhost:5000/api
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 📌 Future Improvements
 
-## Building
+* User authentication (JWT)
+* Role-based access control
+* Deployment (Docker / Cloud)
+* UI/UX enhancements
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 👨‍💻 Author
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Subhradeep Sardar**

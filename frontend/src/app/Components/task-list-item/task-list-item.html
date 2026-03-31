@@ -1,0 +1,12 @@
+<div class="bg-slate-100 border rounded-md p-2 mt-2">
+    <p>{{taskItem().text}}</p>
+
+    <div class=" flex justify-between mt-2">
+        @for (item of action(); track $index) {
+        <button 
+            (click)="markAs(taskItem().id, item)"
+            class="px-2 py-1 text-xs font-semibold border rounded-md bg-slate-200 hover:bg-slate-200/10 cursor-pointer  ">
+            {{ item }}</button>
+        }
+    </div>
+</div>
