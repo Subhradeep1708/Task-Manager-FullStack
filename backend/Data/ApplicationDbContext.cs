@@ -3,9 +3,9 @@ using TaskManagerAPI.Models;
 
 namespace TaskManagerAPI.Data
 {
-    public class AppDbContext : DbContext
+    public class ApplicationDbContext : DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
         public DbSet<TaskItem> Tasks {get; set;}

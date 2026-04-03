@@ -5,7 +5,8 @@ obj/
 *.suo
 *.userosscache
 *.sln.docstates
-
+appsettings.json
+backend/appsettings.json
 # Visual Studio
 .vs/
 

@@ -11,7 +11,7 @@ using TaskManagerAPI.Data;
 
 namespace TaskManagerAPI.Migrations
 {
-    [DbContext(typeof(AppDbContext))]
+    [DbContext(typeof(ApplicationDbContext))]
     [Migration("20260329182408_InitialCreate")]
     partial class InitialCreate
     {

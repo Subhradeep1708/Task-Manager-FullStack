@@ -11,10 +11,10 @@ namespace TaskManagerAPI.Controllers
 
     public class TaskController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly ApplicationDbContext _context;
 
         //constructor
-        public TaskController(AppDbContext context)
+        public TaskController(ApplicationDbContext context)
         {
             _context = context;
         }
